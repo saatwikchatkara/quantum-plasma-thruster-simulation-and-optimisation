@@ -76,74 +76,47 @@ The code is organized into a modular, class-based structure:
 
 ---
 
-## Installation
+## Understanding the Output
 
+### VQE Results
+- **VQE Convergence:** Expectation value of the Hamiltonian vs. iterations.  
+- **Final State Probability:** Measurement probabilities for each design state.  
+- **Search Path on Performance Landscape:** Visualizes optimization trajectory.  
+- **Evolution of Physical Metrics:** Tracks thrust, Isp, efficiency, and erosion.  
+- **Final Design Comparison:** Target vs. achieved performance.  
+- **Results Summary:** Best hyperparameters and final design configuration.  
+
+### Bayesian Optimization Results
+- **Pareto Front:** Trade-off between Isp and efficiency.  
+- **Surrogate Model Landscape:** GP prediction of performance surface.  
+- **Convergence Plot:** Best performance score over iterations.  
+- **Acquisition Function:** Shows exploration vs. exploitation balance.  
+
+---
+
+## Key Concepts Illustrated
+- **Combinatorial Optimization:** Mapping discrete design problems to optimization frameworks.  
+- **Hybrid Quantum-Classical Algorithms:** Demonstrating the VQE workflow.  
+- **Surrogate Modeling:** Using Gaussian Processes to approximate expensive functions.  
+- **Sample-Efficient Optimization:** Bayesian methods minimizing oracle calls.  
+- **Exploration-Exploitation Trade-off:** Illustrated via UCB acquisition.  
+
+---
+
+## Conclusion
+
+This project demonstrates two distinct computational paradigms for solving complex engineering optimization problems:
+
+- **Bayesian Optimization (Classical):** Highly effective, practical, and scalable. Achieves high-quality solutions with fewer calls to the expensive physics model.  
+- **VQE Optimization (Quantum):** Proof-of-concept highlighting current challenges in scalability but pointing to future potential as quantum hardware matures.  
+
+While classical surrogate methods currently dominate in efficiency, the quantum approach provides an exciting foundation for research into problems intractable for classical computing.  
+
+---
+
+## License
+This project is licensed under the **MIT License**.
 ### Prerequisites
 - Python 3.8+  
 - Recommended: Use a virtual environment  
 
-### Setup
-Clone the repository:
-```bash
-git clone https://github.com/your-username/your-repository-name.git
-cd your-repository-name
-The script will perform the following steps:
-
-Prompt you to enter target performance metrics and qubit allocations.
-
-Initialize the ThrusterModel with your targets.
-
-Perform a hyperparameter search for the QuantumOptimizer (VQE).
-
-Display the results of the best VQE run.
-
-Run the SurrogateOptimizer using Bayesian Optimization.
-
-Display the results of the Bayesian optimization run.
-
-Understanding the Output
-VQE Results
-
-VQE Convergence: Expectation value of the Hamiltonian vs. iterations.
-
-Final State Probability: Measurement probabilities for each design state.
-
-Search Path on Performance Landscape: Visualizes optimization trajectory.
-
-Evolution of Physical Metrics: Tracks thrust, Isp, efficiency, and erosion.
-
-Final Design Comparison: Target vs. achieved performance.
-
-Results Summary: Best hyperparameters and final design configuration.
-
-Bayesian Optimization Results
-
-Pareto Front: Trade-off between Isp and efficiency.
-
-Surrogate Model Landscape: GP prediction of performance surface.
-
-Convergence Plot: Best performance score over iterations.
-
-Acquisition Function: Shows exploration vs. exploitation balance.
-
-Key Concepts Illustrated
-
-Combinatorial Optimization: Mapping discrete design problems to optimization frameworks.
-
-Hybrid Quantum-Classical Algorithms: Demonstrating the VQE workflow.
-
-Surrogate Modeling: Using Gaussian Processes to approximate expensive functions.
-
-Sample-Efficient Optimization: Bayesian methods minimizing oracle calls.
-
-Exploration-Exploitation Trade-off: Illustrated via UCB acquisition.
-
-Conclusion
-
-This project demonstrates two distinct computational paradigms for solving complex engineering optimization problems:
-
-Bayesian Optimization (Classical): Highly effective, practical, and scalable. Achieves high-quality solutions with fewer calls to the expensive physics model.
-
-VQE Optimization (Quantum): Proof-of-concept highlighting current challenges in scalability but pointing to future potential as quantum hardware matures.
-
-While classical surrogate methods currently dominate in efficiency, the quantum approach provides an exciting foundation for research into problems intractable for classical computing.
