@@ -104,6 +104,9 @@ The code is organized into a modular, class-based structure:
 ---
 
 ## Conclusion
+---<img width="1790" height="1144" alt="test2" src="https://github.com/user-attachments/assets/6bfa74d5-b0d6-49d8-a788-1521da42b559" />
+<img width="2390" height="1144" alt="download" src="https://github.com/user-attachments/assets/48c3727b-9b8c-478f-8bee-05abbe260041" />
+
 
 This project demonstrates two distinct computational paradigms for solving complex engineering optimization problems:
 
@@ -112,7 +115,8 @@ This project demonstrates two distinct computational paradigms for solving compl
 
 While classical surrogate methods currently dominate in efficiency, the quantum approach provides an exciting foundation for research into problems intractable for classical computing.  
 
----
+
+
 
 ## License
 This project is licensed under the **MIT License**.
