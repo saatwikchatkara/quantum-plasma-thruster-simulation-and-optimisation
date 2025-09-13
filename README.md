@@ -1,5 +1,5 @@
 # Quantum vs. Classical AI for Plasma Thruster Design
-
+Teamname: collectivequbits
 This project provides a comparative framework for optimizing the design of a simulated plasma thruster using two distinct methodologies: a quantum approach based on the Variational Quantum Eigensolver (VQE) and a classical AI approach using Bayesian Optimization with a Gaussian Process surrogate model.
 
 The goal is to find the optimal set of thruster parameters (magnetic field, voltage, propellant flow, and channel material) that maximizes a performance score. This score is based on achieving target values for thrust, specific impulse (Isp), efficiency, and material erosion rate. The project serves as a demonstration of how different computational paradigms can tackle complex, multi-parameter optimization problems where function evaluations are computationally expensive.
